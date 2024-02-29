@@ -1,0 +1,20 @@
+{
+  "name": "workers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.19",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "dev":"nodemon --watch 'src/**/' --ext 'ts,json' --exec 'npx tsc && ts-node ./src/index.ts'",
+    "start": "npx tsc && node dist/index.js"
+  }
+}
